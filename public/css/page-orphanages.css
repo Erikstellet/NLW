@@ -39,6 +39,8 @@ aside footer p
 {
     width: 100%;
     height: 100%;
+    
+    animation-delay: 200ms;
 }
 
 /* button */
@@ -111,7 +113,7 @@ a.create-orphanage:hover
 
 .leaflet-container
 {
-    font: 600 2rem/1 'Nunito', sans-serif;
+    font: 700 2rem/1 'Nunito', sans-serif;
 
     z-index: 5;
 }
