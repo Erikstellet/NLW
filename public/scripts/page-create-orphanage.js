@@ -1,7 +1,7 @@
 // create map
 const map = L.map('mapid').setView([-27.2236479,-49.6553103], 15);
 
-//create and add tileLayer
+// create and add tileLayer
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
 
 // create icon
@@ -72,6 +72,27 @@ function deleteField(event)
 
 }
 
+//select yes or no 
+function toggleSelect(event)
+{
+    // remove class .active (from buttons)
+    document.querySelectorAll('.button-select button').forEach((button) => button.classList.remove('active'))
+
+    // put on class .active
+    const button = event.currentTarget
+    button.classList.add('active')
+
+    // get the button
+
+
+    // check boolean valor
+
+
+    // update input hidden of selected value
+    const input = document.querySelector('[name="open_on_weekends"]')
+
+    input.value = button.dataset.value
+}
 
 
 
